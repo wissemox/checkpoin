@@ -1,0 +1,32 @@
+
+ALGORITHM checkpoint
+VAR 
+    let word = " "//hello  " " is ""
+    let A:STRING = [" "]//hello is 
+    all : STRING =  "hello word . " 
+    let i :INTEGER  = 0
+BEGIN 
+    for  i from 0 to (all.length-1) i++ { 
+    all[i] 
+    //
+    Write(i) 
+    }
+FOR i from 0 to (all.length-1) i++  DO
+    if (all[i]==" ") {  
+    //wa9tha tal9a espace rod il word = "" 
+    A.push(word)  
+    word=" "
+    END if
+    else (i == all.length-1) DO
+        word + = all[i]
+        A.push(word) 
+        word = ""
+    }
+    else { 
+    word+=all[i]
+    }  
+    
+    
+    //words in the sentence 
+    Write(A.length) 
+END_FOR 
